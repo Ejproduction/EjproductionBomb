@@ -4,15 +4,14 @@ from colorama import Fore, Back, Style
 banner = """
  ____________________________________________________
 |                                                    |
-|                 БОМБЕР "EjProdBomb"                  |
+|                 БОМБЕР "EjProductionBomb"                  |
 |                                                    |
 |                 Всего сервисов: 33                 |
 |                                                    |
-|         Bago-fix -Дахуя сервисов + ебалово         |
 |                                                    |
-|                 Ver: 2.3                           |
+|                 Ver: 1.0                           |
 |                                                    |
-|                 Dev: Vk.com/augustinet                |
+|                 Dev: vk.com/augustinet                |
 |____________________________________________________|
 """
 
