@@ -4,19 +4,16 @@ from colorama import Fore, Back, Style
 banner = """
  ____________________________________________________
 |                                                    |
-|                 БОМБЕР "EjProductionBomb"                  |
+|                 БОМБЕР "EjProductionBomb"          |
 |                                                    |
-|                 Всего сервисов: 33                 |
+|                 Ver: 1.1                           |
 |                                                    |
-|                                                    |
-|                 Ver: 1.0                           |
-|                                                    |
-|                 Dev: vk.com/augustinet                |
+|                 Dev: vk.com/augustinet             |
 |____________________________________________________|
 """
 
 print(banner)
-_phone = input('НОМЕР СУКА ВВЕДИ (79xxxxxxxxx)-->> ')
+_phone = input('Номер введи  (79xxxxxxxxx)-->> ')
 
 
 if _phone[0] == '+':
