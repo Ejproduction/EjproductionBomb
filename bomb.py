@@ -8,7 +8,7 @@ banner = """
 |                                                    |
 |                 Ver: 1.1                           |
 |                                                    |
-|                 Dev: vk.com/augustinet             |
+|                 Dev: vk.com/augustincat            |
 |____________________________________________________|
 """
 
